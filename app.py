@@ -2,7 +2,7 @@ import os
 import pickle
 
 # ==============================================================================
-# PASSO 1 — A classe que representa um item (image_b7e000.png, image_b7e32e.png)
+# PASSO 1 — A classe Agendamentos
 # ==============================================================================
 class Agendamento:
     """Classe que representa UM item do seu sistema (um agendamento)."""
@@ -22,7 +22,7 @@ class Agendamento:
 
 
 # ==============================================================================
-# PASSO 2 — A classe gerenciadora (image_b7e32e.png, image_b7e388.png)
+# PASSO 2 — A classe gerenciadora class GerenciadorBarbearia
 # ==============================================================================
 class GerenciadorBarbearia:
     """Classe que gerencia a lista de objetos e cuida da persistência com pickle."""
@@ -57,7 +57,7 @@ class GerenciadorBarbearia:
             return True
         return False
 
-    # 🌟 FUNCIONALIDADE EXTRA EXIGIDA (image_b7e32e.png, image_b7e364.png)
+    # 🌟 FUNCIONALIDADE EXTRA EXIGIDA 
     def calcular_faturamento(self):
         """Soma o valor de todos os serviços que mudaram de status para Concluído."""
         total = 0.0
@@ -91,7 +91,7 @@ class GerenciadorBarbearia:
 
 
 # ==============================================================================
-# PASSO 3 — A função menu (image_b7e3a7.png)
+# PASSO 3 — A função menu 
 # ==============================================================================
 def menu():
     # Cria o arquivo de dados local para persistência consistente
